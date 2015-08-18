@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <title>Color &amp; Type generator</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery-ui.css">
+    <link rel="stylesheet" href="css/vendor/jquery.typey.css">
+    <link rel="stylesheet" href="css/style-v1.css">
+    <link rel="stylesheet" href="#" id="goog-font">
+    <style id="temp-font-style-color"></style>
+    <style id="temp-font-style-font"></style>
+</head>
+<body>
+    <section class="container-fluid text-center" id="controls">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <a href="#" class="btn-block btn btn-primary" id="preview">
+                        Toggle Buttons
+                    </a>
+                </p>
+                <div id="options">
+                    <div class="well">
+                        <div class="btn-group">
+                            <button class="btn-block btn-xs btn btn-default" id="random-fonts">Font family</button>
+                            <button class="btn-block btn-xs btn btn-default" id="random-colors">Color scheme</button>
+                            <button class="btn-block btn-xs btn btn-default" id="random-all">Everything</button>
+                            <button class="btn-block btn-xs btn btn-info" data-toggle="modal" data-target="#export-modal">Export</button>
+                        </div>
+                    </div>
+                    <div class="well">
+                        <ul id="modes"></ul>
+                    </div>
+                    <label>
+                        Button border radius
+                        <input type="range" min="0" max="50" id="border-radius">
+                    </label>
+                    <hr>
+                    <textarea name="" id="css-code" cols="30" rows="10" class="disabled" disabled></textarea>
+                    <textarea name="" id="font-code" cols="30" rows="10" class="disabled" disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="template-container" class="container" style="display:none;"></div>
+
+    <section class="container" id="layout-gen">
+        <div id="selector-groups"></div>
+    </section>
+
+    <div class="modal" id="export-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Exported CSS for block</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>
+                        <code id="exported-output-fonts"></code>
+                    </pre>
+                    <pre>
+                        <code id="exported-output"></code>
+                    </pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- VENDOR -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.typey.js"></script>
+    <script src="js/vendor/tinycolor-min.js"></script>
+
+    <!-- LIB - COLOR -->
+    <script src="js/core.utils.js"></script>
+    <script src="js/core.helpers-v1.js"></script>
+    <script src="js/core.schemes.js"></script>
+    <script src="js/core.schemes.v2.js"></script>
+    <script src="js/core.extractor.js"></script>
+    <script src="js/core.dispatcher.js"></script>
+    <script src="js/core.applicator.js"></script>
+    <script src="js/core.proxy.js"></script>
+    <!-- LIB - FONT -->
+    <script src="js/core.font.rules.js"></script>
+
+    <!--<script src="js/legacy-experiments.js"></script>-->
+
+    <script src="js/init-v1.js"></script>
+</body>
+</html>

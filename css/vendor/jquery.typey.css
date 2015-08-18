@@ -1,0 +1,118 @@
+
+/* Optional classes */
+
+[data-typey-randomize-fonts] { }
+[data-typey-font-history] { }
+[data-typey-font-exporter] { }
+[data-typey-font-export] { }
+
+/* Main dropdown classes */
+
+[data-typey-editable] {
+    position: relative;
+}
+[data-typey-editable]:hover [data-typey-font-list] {
+    display: block;
+}
+[data-typey-font-list] {
+    background-color: #222;
+    color: #fff;
+    display: none;
+    font-family: Helvetica, Arial, sans-serif;
+    left: 0;
+    margin: 0;
+    min-width: 400px;
+    padding: 4px;
+    position: absolute;
+    top:100%;
+    width: 100%;
+    z-index: 1000;
+}
+[data-typey-font-list],
+.font-dropdown > ul {
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+[data-typey-font-list] a {
+    border: 1px solid #f1f1f1;
+    border-radius:4px;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+[data-typey-font-list] a:hover,
+[data-typey-font-list] a.active {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+[data-typey-font-list] ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+[data-typey-font-list] li {
+    border: 1px solid #333;
+    border-left: none;
+    border-right: none;
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+    width: auto;
+    line-height: 1em;
+}
+[data-typey-font-list] > li {
+    display: inline-block;
+    height: 100%;
+    background-color: #333;
+    margin: 0 1px;
+}
+[data-typey-font-list] .font-dropdown:before {
+    color: white;
+    display: block;
+    font-size: 90%;
+}
+[data-typey-font-list] .font-list:before {
+    content: 'Fonts';
+}
+[data-typey-font-list] .font-weights:before {
+    content: 'Weights';
+}
+[data-typey-font-list] .font-dropdown:hover {
+    background-color: #444;
+}
+[data-typey-font-list] .font-dropdown ul {
+    background-color: black;
+    display: none;
+    height: 400px;
+    left: 0;
+    overflow-y: scroll;
+    padding: 0;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    z-index: 1001;
+}
+[data-typey-font-list] .font-dropdown:hover ul {
+    display: block;
+}
+[data-typey-font-list] .font-dropdown li.active {
+    background-color: #000;
+}
+[data-typey-font-list] .font-dropdown li .variant {
+    border:1px solid #555;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 90%;
+    margin: 0 5px 0 0;
+}
+[data-typey-font-list] .font-dropdown li .variant:hover {
+    background-color: #444;
+    color:#fff;
+}

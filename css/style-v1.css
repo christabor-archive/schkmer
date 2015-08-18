@@ -1,0 +1,229 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* TESTING */
+    font-size: 13px;
+    background-color: #f1f1f1;
+    font-family: 'Lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.well {
+    padding: 4px 7px;
+}
+#info {
+    padding: 1em;
+    background-color: #fff;
+}
+/*
+#layout-gen .btn {
+    display: inline-block;
+    text-decoration: none;
+}
+*/
+#layout-gen .off {
+    width: 10px;
+}
+#layout-gen .btn:hover {
+    opacity: 1;
+}
+#layout-gen {
+    margin-top: 1em;
+}
+#output-links a {
+    font-size: 11px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 4px 0;
+}
+.swatch-container {
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    padding: 2px;
+    opacity: 0.5;
+    display: inline-block;
+    width: 100%;
+}
+.swatch-container:hover {
+    opacity: 1;
+}
+.scheme-title {
+    font-size: 20px;
+    font-family: "Lato", Helvetica, sans-serif;
+}
+.swatches {
+    z-index: 999;
+    position: absolute;
+    right: 20px;
+    width: 100px;
+    text-align: right;
+    padding: 1px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+.swatches .swatch {
+    padding: 1em;
+    border: 1px solid #ccc;
+    margin: 0.4em 0;
+}
+.text-center {
+    text-align: center;
+}
+#borderradius {
+    display: inline-block;
+}
+#controls {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    overflow: scroll;
+    padding: 1em;
+}
+#controls ul {
+    text-align: left;
+}
+.container-fluid#layout-gen {
+    width: 85%;
+}
+.wrapper {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    line-height: 2em;
+}
+
+/* DEMO TYPES - namespaced */
+
+.startup-style .btn {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 4px;
+}
+.startup-style h1 {
+    font-size: 4em;
+}
+.startup-style h2 {
+    font-size: 3em;
+    margin: 0.4em auto 1em auto;
+}
+.startup-style h3 {
+    margin: 0.1em auto 0.4em auto;
+}
+.startup-style h4 {
+    font-size: 1.2em;
+    margin: 0.3em auto 1em auto;
+    text-transform: uppercase;
+}
+.startup-style p {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 1em auto;
+}
+.startup-style p {
+    width: 80%;
+}
+.startup-style .quadrants div {
+}
+.startup-style .quadrants div:first-of-type {
+}
+.startup-style .quadrants div:last-of-type {
+
+}
+.startup-style .block {
+    width: 24%;
+    border: none;
+    display: inline-block;
+}
+.startup-style .block img {
+    margin: 0 auto;
+}
+.startup-style #main-form hr {
+    opacity: 0.5;
+}
+.startup-style #main-form .btn {
+    margin: 1em auto;
+    display: block;
+    width: 60%;
+    min-width: 400px;
+}
+.startup-style #main-form textarea {
+    width: 78%;
+}
+.startup-style footer label,
+.startup-style footer input {
+    display: block;
+    margin-bottom: 0.4em;
+}
+.startup-style .icon-md {
+    font-size: 8em;
+}
+.startup-style .icon-xlarge {
+    font-size: 12em;
+}
+.startup-style .row {
+    width: 102.7%;
+    margin-left: -1.1em;
+    padding: 3em 2em;
+    position: relative;
+}
+.startup-style .row:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+.startup-style .intro {
+    font-size: 180%;
+    /*background: url(../bg-repeat.png) 0 0;*/
+    /*background: url(../img/map.jpg) no-repeat 0 0;*/
+    background-size: contain;
+}
+.startup-style .intro p {
+    width: auto;
+}
+.startup-style small {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+    padding-bottom: 1.3em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.startup-style form {
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+/* BLOCKS */
+
+#layout-gen .blocks h1 {
+    font-size: 50px;
+    line-height: 70px;
+}
+#layout-gen .blocks h2 {
+    font-size: 30px;
+    line-height: 60px;
+}
+#layout-gen .blocks h4 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 14px;
+}
+#layout-gen .block {
+    padding: 60px 40px;
+}
+#layout-gen .block:hover {
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(200, 50, 20, 0.6);
+}
+#layout-gen .block .iconpic {
+    font-size: 200px;
+    text-align: center;
+    display: block;
+    padding: 30px;
+}
+#layout-gen .block.footer {
+    font-size: 80%;
+}
+#layout-gen .block.intro .iconpic {
+    font-size: 350px;
+}

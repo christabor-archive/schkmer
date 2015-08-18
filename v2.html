@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <title>Color &amp; Type generator</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery-ui.css">
+    <link rel="stylesheet" href="css/vendor/spectrum.css">
+    <link rel="stylesheet" href="css/vendor/jquery.typey.css">
+    <link rel="stylesheet" href="css/style-v2.css">
+    <link rel="stylesheet" href="css/themes/colorgen.examples.css">
+    <link rel="stylesheet" href="#" id="goog-font">
+
+    <style id="temp-font-style-color"></style>
+    <style id="temp-font-style-font"></style>
+</head>
+<body>
+    <section class="container-fluid text-center" id="overlay">
+        <a href="#overlay-inner" data-toggle="collapse" class="btn-block btn btn-sm btn-primary">view</a>
+        <br>
+        <div class="row collapse" id="overlay-inner">
+            <div class="col-md-12">
+                <div id="options">
+                    <div class="btn-group">
+                        <button class="btn-block btn-xs btn btn-default" id="random-colors">Color scheme</button>
+                        <button class="btn-block btn-xs btn btn-default" id="random-fonts">Font family</button>
+                        <button class="btn-block btn-xs btn btn-default" id="random-fontsize">Font size</button>
+                        <button class="btn-block btn-xs btn btn-default" id="random-all">All</button>
+                        <!-- <button class="btn-block btn-xs btn btn-default" id="reconcile">Reconcile colors</button> -->
+                        <button class="btn-block btn-xs btn btn-info" data-toggle="modal" data-target="#export-modal">Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="swatches"></div>
+
+    <div id="status">
+        <div id="messages" class="alert alert-danger"></div>
+    </div>
+
+    <div id="template-container" class="container" style="display:none;"></div>
+
+    <section class="container" id="layout-gen">
+        <div id="selector-groups"></div>
+    </section>
+
+    <div class="modal" id="export-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Exported CSS for block</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>
+                        <code id="exported-output-fonts"></code>
+                    </pre>
+                    <pre>
+                        <code id="exported-output"></code>
+                    </pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- VENDOR -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.typey.js"></script>
+    <script src="js/vendor/spectrum.js"></script>
+    <script src="js/vendor/tinycolor-min.js"></script>
+
+    <!-- LIB - COLOR -->
+    <script src="js/core.utils.js"></script>
+    <script src="js/core.helpers.js"></script>
+    <script src="js/core.schemes.js"></script>
+    <script src="js/init-v2.js"></script>
+</body>
+</html>
